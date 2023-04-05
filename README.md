@@ -16,6 +16,7 @@ An example is available, just clone this repo or download the .ZIP archive, and 
 
 ## Directory Structure
 The project follows a simple sturcture with all the `html`, `javascript` and `css` being located in the main folder and all of the fonts and image assets being located in a `static` subdirectory
+
     .
     └── Example/
         ├── data.js
