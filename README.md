@@ -92,3 +92,10 @@ For the font and page layout/functionality, these will not be covered here as th
 ## Cache Busting
 
 > Hey you are pretty early and I haven't written this section yet but hey, take a look up top and see what has already been acomplished
+
+## Road Map
+
+To make this project a little more useful and interseting, we are looking into adding the following features in the future:
+
+1. Spotify API integration
+2. Last.fm API integration
