@@ -51,7 +51,9 @@ The set up to getting a working website is very quick and easy the files that yo
 * `MontserratThin.woff`
 * `MontserratThin.woff2`
 
-Firstly, starting with `setup.js`. When opening the file you will see that it is very short and well commented, everything should be straight forward, but here is a reiteration in more detail of the comments present in the file. All that the file does is declare some variable that are then processed by `handle.js`.
+#### Step One
+
+Starting with `setup.js`. When opening the file you will see that it is very short and well commented, everything should be straight forward, but here is a reiteration in more detail of the comments present in the file. All that the file does is declare some variable that are then processed by `handle.js`.
 
 * `var albumTitle = '';` is where you will put (inside of the quotation marks) the title of the album that you are displaying on the site.
 * `var albumArtist = '';` is where you will put (inside of the quotation marks) the artist of the album that you are displaying on the site.
@@ -63,4 +65,30 @@ Firstly, starting with `setup.js`. When opening the file you will see that it is
     * Deezer
     * Amazon Music
     * YouTube Music
+* `var darkmode = ;` is the selector for the dark mode setting, `0` will have the page always in dark mode, `1` will have the page always in light mode and `2` will have the page dynamically adjust according to the current OS setting.
+* `var bouncylink = ;` is the selector to enable or disable the small bouncing prompt, pointing towards the burger menu, that dissapears after a few seconds when the page is loaded, `true` will have this feature enabled and `false` will have it disabled.
 
+Refer to the `data.js` located in the `Example` directory as a guide as to where to input values should you be confused
+
+#### Step Two
+
+Now an album art needs to be uploaded in the `static` folder, Ideally the album art need to be a high resolution of 1500x1500px and must be in the `.jpg` format. The file must be named `image.jpg` and placed in the `static` folder.
+
+A few sources are reccomended for high resolution album art:
+
+* https://bendodson.com/projects/itunes-artwork-finder/ (This is my top reccomendation, just set the left dropdown to `Album` and away you search)
+* https://albumartexchange.com (For this you will need to create an account and not all images are high res or original)
+
+That should be it for the set up of the webpage, now open `index.html` in the `Source` directory that you have just updated with all of the correct information in `data.js` and the `image.jpg` and you should see something similar to what it looks like in `Example` but just with your own album of choice and its corresponding links and text.
+
+## Further Customizations
+
+Further customizations are possible such as changing fonts, layouts/functionality and the favicon.
+
+Changing the favicon is easy, just strip the `Source` directory of the existing `favicon.ico` and replace it with your favicon of choice, if you have an image, search `jpeg to ico` or `png to ico` etc... to convert that image to a compatible `.ico` format
+
+For the font and page layout/functionality, these will not be covered here as they excede the scope of the project and require substantial background knowledge but if you wish to create a branch, feel free to contact me and we can discuss such things.
+
+## Cache Busting
+
+> Hey you are pretty early and I haven't written this section yet but hey, take a look up top and see what has already been acomplished
