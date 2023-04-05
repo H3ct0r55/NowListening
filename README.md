@@ -91,7 +91,25 @@ For the font and page layout/functionality, these will not be covered here as th
 
 ## Cache Busting
 
-> Hey you are pretty early and I haven't written this section yet but hey, take a look up top and see what has already been acomplished
+As browsers love to cache files and serve them locally when you reload a webpage, if you modify either `data.js` or `image.jpg` you may not get the updated webpage served to you when you load the page. Note that this is only usually a problem when the webpage is hosted on a webserver. localhost and accessing the files directly on device should not pose this issue.
+
+There are a few methods for overriding cache, also known as Cache Busting. Only one simple method here will be described as the other methods are beyond the scope of this project.
+
+The reccomended method consists in renaming the files to something else than the original ones, so that due to the different names, the webserver serves the new files to the browser and not the browser using its old cached data. A common naming scheme for such methods is for example renaming `data.js` to `data.v1.js` and going up a number ever time the website source is updated on the webserver, so the first would be `data.v1.js`, the second would be `data.v2.js` etc...
+
+As you will only likely be modifiying `data.js` and `image.jpg`, these are the two files that will need to be renamed, should you change `style.css` or `handle.js` these will also need to be renamed but the exact procedure will not be covered here.
+
+Firstly rename `data.js` to `data.v1.js`, then open up `index.html` in a text editor and find the line
+
+    <script type="text/javascript" src="./data.js"></script>
+    
+in the document `<head>`, then rename the `./data.js` to `./data.v1.js`, making sure that the name matches up to whatever you named the file.
+
+Secondly rename `image.jpg` to `image.v1.jpg`, then again in `index.html` look for the following line of code that is two lines down from the opening `<body>` tag
+
+    <img id="albumart" class="albumArt widthdesktop" src="./static/image.jpg">
+    
+Then rename `./static/image.jpg` to `./static/image.v1.jpg` making sure that the name matches up to whatever you named the file.
 
 ## Road Map
 
