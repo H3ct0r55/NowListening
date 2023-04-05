@@ -37,4 +37,5 @@ The project follows a simple sturcture with all the `html`, `javascript` and `cs
 
 ## Setup
 The set up to getting a working website is very quick and easy the files that you need to worry about are listed in **bold**
-`**data.js**`
+
+* **`data.js`**
