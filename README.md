@@ -97,5 +97,6 @@ For the font and page layout/functionality, these will not be covered here as th
 
 To make this project a little more useful and interseting, we are looking into adding the following features in the future:
 
-1. Spotify API integration
-2. Last.fm API integration
+1. Last.fm API integration (This will be the preliminary Spotify connection, Spotify API to be added should demand be high enough)
+2. Spotify API integration
+3. More API's?
