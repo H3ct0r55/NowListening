@@ -11,4 +11,5 @@ The current customizable features are :
 
 ## Example
 An example is available, just clone this repo or download the .ZIP archive, and you will find an `Example` directory, in this directory you will find an `index.html` which can be opened and everything should work with a demo album. 
+
 **Please note** that this example is for demostration and testing purpouses only and that for a release you must populate your own page using the `Source`
