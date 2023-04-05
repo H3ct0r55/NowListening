@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<title>Now Playing</title>
+	<script type="text/javascript" src="./handle.js"></script>
+	<script type="text/javascript" src="./data.js"></script>
+</head>
+<body id="body">
+	<div class="imgcont">
+		<img id="albumart" class="albumArt widthdesktop" src="./static/image.jpg">
+		<p id="title"></p>
+		<p id="artist"></p>
+	</div>
+	<div class="burger">
+		<svg class='lightstroke' id='burger' width="100%" height="100%" viewBox="0 0 512 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
+		    <g transform="matrix(0.976563,0,0,0.875,6,20)">
+		        <path d="M0,0L512,0" style="fill:none;stroke-width:18.92px;"/>
+		    </g>
+		    <g transform="matrix(0.976563,0,0,0.875,6,175)">
+		        <path d="M0,0L512,0" style="fill:none;stroke-width:18.92px;"/>
+		    </g>
+		    <g transform="matrix(0.976563,0,0,0.875,6,330)">
+		        <path d="M0,0L512,0" style="fill:none;stroke-width:18.92px;"/>
+		    </g>
+		</svg>
+		<p id="link" class="bounce">⇦ Links</p>
+	</div>
+	<div id="dropcontent" class="dropdown opacity-0">
+		<a class="lighttxt" id="sp" href="">Spotify</a>
+		<a class="lighttxt" id="ti" href="">Tidal</a>
+		<a class="lighttxt" id="qo" href="">Qobuz</a>	
+		<a class="lighttxt" id="ap" href="">Apple</a>
+		<a class="lighttxt" id="de" href="">Deezer</a>
+		<a class="lighttxt" id="am" href="">Amazon</a>
+		<a class="lighttxt" id="yt" href="">YouTube</a>
+	</div>
+	<div id="main"></div>
+</body>
+</html>
